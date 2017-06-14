@@ -1,0 +1,45 @@
+Advanced Topics in Cyber.
+Exercises.
+
+Exercise 1. Exploiting Techniques.
+
+We have learned the two techniques:
+- exploiting Function return address in a classical way;
+- using return-to-libc.
+
+But there are many other options.
+
+Option 1.1 Find on Internet a working example of forcing the software to run malicious code by using either of the techniques below:
+- using SEH (SaveSEH or SEHOR) at Windows;
+- forcing the software to jump to the malicious code;
+- forcing the software to slide to the malicious code;
+- overwrite a Global Offset Table;
+- overwrite GCC created destructors (.dtors);
+- virtual table attackes (vptr);
+- hijacking atexit();
+- longjump() based exploits.
+- etc. options on your choice.
+
+Find on Internet a working at Win-7 and up (32-bit or 64-bit) or at modern gcc/kernel as Ubuntu 14 and up (32-bit or 64-bit) example.
+Check that the example is still working indeed with restrictions stated there.
+Write a small paper containing the link and details on the steps to reproduce.
+Be prepared to demostrate it in the class and explain all the steps and the technique. 
+
+
+Option 1.2 Improve the basic intrusion example based on:
+http://crypto.Stanford.edu/~blynn/rop/
+
+Check that it is working indeed.
+Write a small paper containing the link and details on the steps to reproduce.
+Be prepared to demostrate it in the class and explain all the steps. 
+
+
+
+Exercise 2. Reverse Engineering.
+
+Option 2.1
+Using IDA tool modify Ghotit-Real-Writer-and-Reader.exe
+Be prepared to step-by-step demonstration of the analyses and cut and explain your modification and techniques used in the classroom.
+
+Option 2.2
+Explain options or techniques available in IDA but not teached in the classroom.
